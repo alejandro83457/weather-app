@@ -1,0 +1,29 @@
+body {
+  margin: 0;
+  height: 100dvh;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 100px 10fr 50px;
+}
+
+header {
+  background-color: lightblue;
+  text-align: center;
+}
+
+#search {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+
+main {
+  background-color: lightcyan;
+}
+footer {
+  background-color: lightgoldenrodyellow;
+  display: flex;
+  gap: 0.3rem;
+  justify-content: center;
+  align-items: center;
+}
