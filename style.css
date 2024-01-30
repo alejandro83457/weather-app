@@ -32,7 +32,7 @@ main {
   justify-content: center;
 }
 
-#weather > div {
+#main-div {
   background-color: white;
   border-radius: 7px;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
@@ -40,13 +40,13 @@ main {
   display: grid;
   grid-template-columns: 1fr 5fr;
   grid-template-rows: 1fr 2fr 1fr;
-  width: 450px;
 }
 
 #weather > div > div {
   display: flex;
   align-items: center;
   padding-left: 1rem;
+  white-space: nowrap;
 }
 
 #location-div {
@@ -81,4 +81,14 @@ a {
 
 a:hover {
   color: rgb(124, 124, 124);
+}
+
+input {
+  padding: 3px;
+  font-size: 18px;
+  border-radius: 5px;
+  border: 1px solid black;
+  border-color: white;
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
