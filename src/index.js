@@ -12,16 +12,22 @@ function addWeatherData(data) {
   const tempDiv = document.createElement('div');
   const img = document.createElement('img');
 
+  locDiv.id = 'location-div';
+  tempDiv.id = 'temp-div';
+  textDiv.id = 'text-div';
+
   // destructure data
   const { name, region } = data.location;
   const { text, icon } = data.current.condition;
   const { temp_f } = data.current;
 
+  // add text to divs
   locDiv.textContent = `${name}, ${region}`;
   textDiv.textContent = text;
   img.src = icon;
-  tempDiv.textContent = `${temp_f} F`;
+  tempDiv.textContent = `${temp_f}°`;
 
+  // append divs
   mainDiv.appendChild(img);
   mainDiv.appendChild(locDiv);
   mainDiv.appendChild(tempDiv);
