@@ -20,6 +20,31 @@ header {
 main {
   background-color: lightcyan;
 }
+
+#weather {
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+#weather > div {
+  display: grid;
+  grid-template-columns: 1fr 10fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  width: 50vw;
+}
+
+img {
+  /* width: 50px; */
+  grid-row: 1 / 4;
+}
+
+#weather > div > div,
+#weather > div > img {
+  border: 1px solid black;
+}
+
 footer {
   background-color: lightgoldenrodyellow;
   display: flex;
